@@ -1,5 +1,7 @@
 const express = require('express');
 const { resolve } = require('path');
+const config = require('./config');
+console.log(config);
 
 const app = express();
 const port = 3010;
@@ -13,3 +15,5 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
+
